@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'calculator.dart';
 import 'drawer_widget.dart';
 
 void main() {
@@ -35,30 +36,33 @@ class _MainPageState extends State<MainPage> {
             "Drawer Demo",
           ),
         ),
-        body: Builder(
-          builder: (context) => Container(
-            padding: EdgeInsets.symmetric(horizontal: 32),
-            alignment: Alignment.center,
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(minimumSize: Size.fromHeight(50)),
-              onPressed: () {
-                Scaffold.of(context).openDrawer();
-              },
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(Icons.home_max_outlined, color: Colors.white),
-                  Spacer(),
-                  Title(
+        body: 
+        Calculator(),
+        // Builder(
+        //   builder: (context) => Container(
+        //     padding: EdgeInsets.symmetric(horizontal: 32),
+        //     alignment: Alignment.center,
+        //     child: ElevatedButton(
+        //       style: ElevatedButton.styleFrom(minimumSize: Size.fromHeight(50)),
+        //       onPressed: () {
+        //         Scaffold.of(context).openDrawer();
+        //       },
+        //       child: Row(
+        //         mainAxisSize: MainAxisSize.min,
+        //         children: [
+        //           Icon(Icons.home_max_outlined, color: Colors.white),
+        //           Spacer(),
+        //           Title(
                     
-                    color: Colors.white,
-                    child: Text('Open Drawer',),
-                  ),
-                  Spacer(),
-                ],
-              ),
-            ),
-          ),
-        ));
+        //             color: Colors.white,
+        //             child: Text('Open Drawer',),
+        //           ),
+        //           Spacer(),
+        //         ],
+        //       ),
+        //     ),
+        //   ),
+        // )
+      );
   }
 }

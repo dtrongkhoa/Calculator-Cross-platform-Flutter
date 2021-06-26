@@ -70,3 +70,16 @@ class NotificaitonPage extends StatelessWidget {
     );
   }
 }
+
+// class PersonalPage extends StatelessWidget {
+  
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('Personal'),
+//       ),
+//     );
+//   }
+// }
